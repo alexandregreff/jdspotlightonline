@@ -2,7 +2,7 @@
   "//1": "describes your app and its dependencies",
   "//2": "https://docs.npmjs.com/files/package.json",
   "//3": "updating this file will download and update your packages",
-  "name": "cosmos-jdcs-web",
+  "name": "spotlight-online",
   "version": "2.5.2",
   "description": "A custom Just Dance Unlimited server made by WodsonKun for personal use.",
   "main": "server.js",
@@ -23,7 +23,7 @@
     "node": "12.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/cosmos-jdcs-web"
+    "url": "https://glitch.com/edit/#!/spotlight-online"
   },
   "license": "MIT",
   "keywords": [
