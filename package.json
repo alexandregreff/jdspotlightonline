@@ -2,28 +2,24 @@
   "//1": "describes your app and its dependencies",
   "//2": "https://docs.npmjs.com/files/package.json",
   "//3": "updating this file will download and update your packages",
-  "name": "spotlight-online",
-  "version": "2.5.2",
-  "description": "A custom Just Dance Unlimited server made by WodsonKun for personal use.",
+  "name": "hello-express",
+  "version": "0.0.1",
+  "description": "A simple Node app built on Express, instantly up and running.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "axios": "^0.27.2",
-    "request-country": "^0.1.6",
+    "express": "^4.17.1",
     "xmlhttprequest": "^1.8.0",
-    "express": "^4.18.1",
-    "https": "^1.0.0",
-    "fs": "^0.0.2",
-    "fs-extra": "^10.1.0",
-    "path": "^0.12.7"
+    "body-parser": "^1.19.0",
+    "fs-path": "^0.0.25"
   },
   "engines": {
-    "node": "12.x"
+    "node": "8.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/spotlight-online"
+    "url": "https://glitch.com/edit/#!/hello-express"
   },
   "license": "MIT",
   "keywords": [
