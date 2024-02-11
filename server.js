@@ -81,7 +81,7 @@ app.post("/carousel/v2/pages/quests", function (request, response) {
 app.get("/carousel/v2/pages/party", function (request, response) {
   const skuId = request.header("X-SkuId");
   switch (skuId) {
-    case "jdex-pc-cmos":
+    case "jd2017-pc-ww":
       // Set the variables to SongDB and Carousel
       var OnlineDB = JSON.parse(
         JSON.stringify(
@@ -444,7 +444,7 @@ app.get("/carousel/v2/pages/party", function (request, response) {
 app.post("/carousel/v2/pages/partycoop", function (request, response) {
   const skuId = request.header("X-SkuId");
   switch (skuId) {
-    case "jdex-pc-cmos":
+    case "jd2017-pc-ww":
       response.send(EXJSONCarousel);
       break;
     case "jd2019-nx-all":
@@ -460,7 +460,7 @@ app.post("/carousel/v2/pages/partycoop", function (request, response) {
 app.post("/carousel/v2/pages/sweat", function (request, response) {
   const skuId = request.header("X-SkuId");
   switch (skuId) {
-    case "jdex-pc-cmos":
+    case "jd2017-pc-ww":
       response.send(EXJSONCarousel);
       break;
     case "jd2019-nx-all":
@@ -476,7 +476,7 @@ app.post("/carousel/v2/pages/sweat", function (request, response) {
 app.get("/songdb/v2/songs", function (request, response) {
   const skuId = request.header("X-SkuId");
   switch (skuId) {
-    case "jdex-pc-cmos":
+    case "jd2017-pc-ww":
       // Define a new variable for the SongDB, so it can change banners into map_bkgs
       var OnlineDB = require("./cosmos-database/v1/songdb/pc-cmos-songdb.json");
       for (var song in OnlineDB) {
@@ -506,7 +506,7 @@ app.get("/songdb/v2/songs", function (request, response) {
 app.get("/packages/v1/sku-packages", function (request, response) {
   const skuId = request.header("X-SkuId");
   switch (skuId) {
-    case "jdex-pc-cmos":
+    case "jd2017-pc-ww":
       response.send(PCSKUPackages);
       break;
     case "jd2019-nx-all":
@@ -526,7 +526,7 @@ app.get(
   function (request, response) {
     const skuId = request.header("X-SkuId");
     switch (skuId) {
-      case "jdex-pc-cmos":
+      case "jd2017-pc-ww":
         if (request.params.map) {
           var path = "./cosmos-database/v1/content-authorization/";
           if (fs.existsSync(path + request.params.map + ".json")) {
@@ -665,7 +665,7 @@ app.get("/customizable-itemdb/v1/items", function (request, response) {
 app.get("/songdb/v1/localisation", function (request, response) {
   const skuId = request.header("X-SkuId");
   switch (skuId) {
-    case "jdex-pc-cmos":
+    case "jd2017-pc-ww":
       response.send(LocaleID);
       break;
     case "jd2019-nx-all":
